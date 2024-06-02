@@ -1,4 +1,4 @@
 export const api = {
-    userBaseURL: 'http://localhost:3000/api/user',
-    pwdBaseURL : 'http://localhost:3000/api/password'
+    userBaseURL: 'https://mern-passwordgenerator.onrender.com/api/user',
+    pwdBaseURL : 'https://mern-passwordgenerator.onrender.com/api/password'
 };
