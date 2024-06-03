@@ -71,7 +71,7 @@ import {
     return (
       <div className="px-4 py-8">
       
-        <Card className="w-full max-w-[600px] mx-auto bg-[#3AB795]">
+        <Card className="w-full max-w-[600px] mx-auto bg-[#0047AB]">
           <CardBody>
            
             {password && <Password password={password} handleRefresh={handleRefresh}/>}

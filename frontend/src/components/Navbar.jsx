@@ -54,7 +54,7 @@ export function NavbarDefault() {
 
   return (
     <>
-      <Navbar className="mx-auto max-w-screen px-4 py-3 lg:px-8 lg:py-3 rounded-none bg-[blue] border-none shadow-none">
+      <Navbar className="mx-auto max-w-screen px-4 py-3 lg:px-8 lg:py-3 rounded-none bg-[black] border-none shadow-none">
         <div className="container mx-auto flex items-center justify-between">
          
           {location.pathname=="/passwords"?<Link to="/"><Typography
@@ -140,7 +140,8 @@ export function NavbarDefault() {
                   variant="gradient"
                   onClick={openModal}
                   size="sm"
-                  className="hidden lg:inline-block"
+                  className="hidden lg:inline-block text-black"
+                  color="white"
                 >
                   <span>Log In</span>
                 </Button>
