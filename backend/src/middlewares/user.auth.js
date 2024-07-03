@@ -5,7 +5,6 @@ export const userAuth = async (req, res, next) => {
     try {
         const authHeader = req.headers.authorization;
 
-
         if (!authHeader || !authHeader.startsWith('Bearer ')) {
             console.log("Authorization header missing or does not start with 'Bearer'");
             return res.status(401).json({ error: "Authorization header missing or invalid" });
@@ -16,6 +15,7 @@ export const userAuth = async (req, res, next) => {
 
         if (!token) {
             return res.status(401).json({ error: 'No token found' });
+            console.log("token not found")
         }
 
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
